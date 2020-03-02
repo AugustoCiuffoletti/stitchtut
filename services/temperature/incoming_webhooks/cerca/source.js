@@ -20,7 +20,7 @@ exports = function(payload, response) {
     // when the "Respond with Result" setting is set.
     // return  "Hello World!";
     var collection = context.services.get("mongodb-atlas").db("Meteo").collection("Citta");
-    var t = collection.findOne({nome: "Trento"}).then(
+    var t = collection.findOne({nome: bbb}).then(
        (doc)=>{return doc.temperatura.toString()}
     );
     return t;
