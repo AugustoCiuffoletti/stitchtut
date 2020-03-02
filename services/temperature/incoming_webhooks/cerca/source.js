@@ -1,9 +1,5 @@
 // This function is the webhook's request handler.
 exports = function(payload, response) {
-    // Data can be extracted from the request as follows:
-
-    // Query params, e.g. '?arg1=hello&arg2=world' => {arg1: "hello", arg2: "world"}
-    // const {arg1, arg2} = payload.query;
     const {n} = payload.query;
 
     // Headers, e.g. {"Content-Type": ["application/json"]}
