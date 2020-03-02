@@ -2,13 +2,6 @@
 exports = function(payload, response) {
     const {n} = payload.query;
 
-    // Headers, e.g. {"Content-Type": ["application/json"]}
-    // const contentTypes = payload.headers["Content-Type"];
-
-    // Raw request body (if the client sent one).
-    // This is a binary object that can be accessed as a string using .text()
-    // const body = payload.body;
-
     console.log("n=", n);
     // console.log("Content-Type:", JSON.stringify(contentTypes));
     // console.log("Request body:", body);
